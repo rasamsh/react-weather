@@ -1,4 +1,4 @@
-import React from  'react';
+import React from 'react';
 import Nav from 'Nav';
 
 /*var Main = React.createClass({
@@ -13,12 +13,15 @@ render : function () {
 }
 });*/
 
-var Main = (props)=>{
-  return(
+var Main = (props) => {
+  return (
     <div>
-    <Nav/>
-    <h1>Main Component</h1>
-    {props.children}
+      <Nav/>
+      <div className="row">
+        <div className="columns medium-6 large-4 small-centered">
+          {props.children}
+        </div>
+      </div>
     </div>
   );
 };
